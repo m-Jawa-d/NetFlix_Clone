@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  scroll-behavior: smooth;
+}
+.NavBar{
+  display: flex;
+  position:fixed;
+  padding: 10px!important;
+  top: 0px;
+  justify-content: space-between;
+  z-index: 1;
+  
+  width: 100%;
+  height: 57px;
+}
+.NavBar_bg{
+  background-color: #111;
+  transition-timing-function: ease;
+  transition: all 0.7s;
+}
+.NavBar_logo1{
+  margin-left: 10px;
+  margin-top: 5px;
+  position: fixed;
+  left: 0px;
+  height:23px;
+  object-fit: contain;
+}
+.NavBar_logo2{
+  margin-top: 5px;
+  margin-right: 10px;
+  position: fixed;
+  Right: 0px;
+  height:25px;
+  object-fit: contain;
+}
+.App_class_Bgblack{
+  background-color: #111;
+  color: #fff;
+}
+.row_heading{
+  margin-top: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  /* margin-left:10px; */
+  font-weight: bold;
+}
+.row_main{
+  display: flex;
+  flex-direction: column;
+}
+.row_inner{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  overflow: auto;
+  margin-left: 10px;
+  /* margin-right: 10px; */
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.row_inner::-webkit-scrollbar{
+  display: none
+}
+.poster_img{
+  margin-right: -35px;
+  width:280px;
+  height: 260px;
+  margin-left: -53px; 
+  transition: transform 450ms;
+  object-fit: contain;
+}
+
+.poster_img:hover{
+  transform: scale(1.04);
+}
+.poster_path{
+  margin-right: 13px;
+  width:260px;
+  height: 130px; 
+  transition: transform 450ms;
+}
+.poster_path:hover{
+  transform: scale(1.05);
+}
+/* ********Banner Section****************** */
+.header{
+  height: 80vh;
+  background-size: 100% 100%;
+  /* height: 480px; */
+  /* background-size: auto; */
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  /* background-size: 95vw 80vh; */
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+}
+.banner_h{
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+  padding-left: 50px;
+  margin-top: 160px;
+}
+.button_main{
+  padding-left: 50px;
+}
+.banner_button{
+  transition: transform 450ms;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color:rgb(51,51,51,0.5);
+}
+.banner_button:hover{
+  color: black;
+  background-color: aliceblue;
+  transition: 1s;
+}
+.banner_discrip{
+  padding-left: 50px;
+  color: #fff;
+  width: 20rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  min-width: 360px;
+  height: 80px;
+}
+.banner_fade{
+  height: 80vh;
+  background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
+}
+/****************** footer section ***********************/
+.footer_p{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+  color: #fff;
+}
+.movies_name{
+  color: rgba(169, 169, 169, 0.616);
+}
+
+
+
+@media(max-width:765px){
+  .header{
+    height: 40vh;
+  }
+  .banner_h{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 2.1rem;
+    max-width: 60px;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+    padding-left: 50px;
+    
+  }
+  .banner_discrip{
+    visibility: hidden;
+  }
+  .row_heading{
+    display: flex;
+    justify-content: center;
+  }
+}
