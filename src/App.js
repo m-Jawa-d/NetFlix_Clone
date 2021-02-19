@@ -18,7 +18,7 @@ function App() {
       <Row title='Acton Movies' url={`${movies_requests.fetchActionMovies}`} />
       <Row title='Comedy Movies' url={`${movies_requests.fetchComedyMovies}`} />
       <Row title='Romance Movies' url={`${movies_requests.fetchRomanceMovies}`} />
-      <Row title='Documentaries' url={`${movies_requests.fetchDocumentaries}`} />
+      {/* <Row title='Documentaries' url={`${movies_requests.fetchDocumentaries}`} /> */}
       <Footer />
     </div>
   )
