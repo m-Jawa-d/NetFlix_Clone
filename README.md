@@ -12,7 +12,7 @@ This project is a **Netflix clone** built using **React.js** and powered by the 
 
 ## **Demo**
 
-[**Live Demo**](#https://m-jawa-d.github.io/NetFlix_Clone/)
+[**Live Demo**](https://m-jawa-d.github.io/NetFlix_Clone/) <!-- Add your deployed project link here -->
 
 
 ## **Features**
