@@ -41,6 +41,8 @@ This project is a **Netflix clone** built using **React.js** and powered by the 
    ```shell
    git clone https://github.com/m-Jawa-d/NetFlix_Clone.git
 2. **Navigate to the project directory:**:
+    ```shell
    cd netflix-clone
 3. **Install dependencies:**:
+    ```shell
     npm install
