@@ -7,12 +7,13 @@ This project is a **Netflix clone** built using **React.js** and powered by the 
 - [**Features**](#features)
 - [**Technologies Used**](#technologies-used)
 - [**Setup and Usage**](#setup-and-usage)
+- [**Getting a TMDB API Key**](#getting-a-tmdb-api-key)
 - [**Contributing**](#contributing)
 - [**License**](#license)
 
 ## **Demo**
 
-[**Live Demo**](https://m-jawa-d.github.io/NetFlix_Clone/) <!-- Add your deployed project link here -->
+[**Live Demo**](https://m-jawa-d.github.io/NetFlix_Clone/)
 
 
 ## **Features**
@@ -40,9 +41,39 @@ This project is a **Netflix clone** built using **React.js** and powered by the 
 1. **Clone the repository**:
    ```shell
    git clone https://github.com/m-Jawa-d/NetFlix_Clone.git
-2. **Navigate to the project directory:**:
-    ```shell
-   cd netflix-clone
-3. **Install dependencies:**:
-    ```shell
-    npm install
+   ```
+
+2. **Navigate to the project directory**:
+   ```shell
+   cd NetFlix_Clone
+   ```
+
+3. **Install dependencies**:
+   ```shell
+   npm install
+   ```
+
+4. **Add your TMDB API key**:
+   ```shell
+   cp .env.example .env
+   ```
+   Then open `.env` and replace `your_tmdb_api_key_here` with your own key (see [Getting a TMDB API Key](#getting-a-tmdb-api-key)).
+
+5. **Start the app**:
+   ```shell
+   npm start
+   ```
+
+## **Getting a TMDB API Key**
+
+1. Create a free account at [themoviedb.org](https://www.themoviedb.org/signup).
+2. Go to **Settings → API** (or open [https://www.themoviedb.org/settings/api](https://www.themoviedb.org/settings/api)).
+3. Request an API key (choose **Developer** / personal use).
+4. Copy your **API Key (v3 auth)**.
+5. Paste it into your local `.env` file:
+   ```env
+   REACT_APP_TMDB_API_KEY=your_actual_key_here
+   ```
+6. Restart the dev server if it was already running (`npm start`).
+
+> **Note:** Never commit your real `.env` file. Only `.env.example` is tracked in git.

@@ -10,7 +10,6 @@ function Row({ title, url, isLargerRow }) {
   const [movie, upMovie] = useState([]);
   useEffect(() => {
     const func = async () => {
-      // const api_Key=`YOUR_API_KEY_HERE`;
       const res = await axios.get(`${url}`)
       upMovie(res.data.results)
       // return jsonRes;
